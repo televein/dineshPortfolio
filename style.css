@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: #101214;
+    color: #7A7C80;
+    color-scheme: dark;
+}
+
+h2,.white{
+    color: #fff;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+.section-1{
+    min-width: 210px;
+    position: fixed;
+    padding-top: 40vh;
+    text-align: center;
+    background-color: #101214;
+    height: 100vh;
+    z-index: 1;
+}
+
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-1 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.section-2{
+    min-width: 610px;
+    position: absolute;
+    left: 210px;
+    padding-top: 10vh;
+    width: 75%;
+}
+
+.section-2 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-2 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
+}
+.section-2 a:hover{
+    /* font-size: 1.3rem; */
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
+.education h4{
+  margin-left: 35px;
+}
+
+.education h4:hover{
+  color: #fff;
+}
+
+.education p{
+  margin-left: 60px;
+}
+
+.education p:hover{
+  color: #ddd;
+}
+
+.section-1 a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .white:hover{
+    position: relative;
+    padding-left: 10px;
+  }
+
+  .tech-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 125px; 
+      height: 150px; 
+      border-radius: 15px; 
+      border: 2px solid #ddd; 
+      margin: 10px; 
+      transition: all 0.2s ease-in-out;
+      color: #333; 
+    }
+    .tech-icon:hover {
+      transform: scale(1.1); 
+    }
+    .tech-icon i {
+      font-size: 2em;
+      color: #ddd;
+    }
+.tech-icons-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px; 
+  justify-items: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+}
+
+.tech-icon {
+  padding: 10px; /* Padding around each icon */
+  box-sizing: border-box;
+}
+
+.tech-icon i {
+  font-size: 2em; /* Adjust icon size */
+}
+
+@media (max-width: 1200px) {
+  .tech-icons-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 icons per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .tech-icons-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 icons per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-icons-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 icons per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-icons-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 icon per row */
+  }
+}
+
+
+
+  .project-showcase {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust spacing as desired */
+  }
+  
+  .card-container a {
+    width: 300px; /* Adjust card width as desired */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Add hover effect (optional) */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 150px; /* Adjust image height as desired */
+    object-fit: cover; /* Scales image to fit container */
+  }
+  
+  .project-card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .resume{
+    display: grid;
+  }
+
+  .resume button{
+    margin: auto;
+  }
+  
+  .resume button a{
+    color: blanchedalmond;
+  }
+
+
+@media(max-width:780px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding:0;
+        padding-top: 5rem;
+    }
+    .section-2{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #101214;
+            color: #7A7C80;
+        }
+
+        .grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.section-1{
+    position: fixed;
+    min-width: 210px;
+    padding-top: 40vh;
+    text-align: center;
+    background-color: #101214;
+    height: 100vh;
+    z-index: 1;
+}
+
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-1 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+        h2, .white {
+            color: #fff;
+        }
+
+        a {
+            color: #7A7C80;
+            text-decoration: none;
+        }
+
+        .project-showcase {
+            position: absolute;
+            left: 210px;
+            text-align: center;
+            /* margin-top: 40vh; */
+            padding: 20px;
+        }
+
+        .project-showcase h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .project-details {
+            margin-top: 20px;
+        }
+
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-description {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            display: inline-block;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #282c34;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .project-link:hover {
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .view{
+            min-width: 450px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @media(max-width:780px) {
+            .project-showcase {
+                margin-top: 20vh;
+                padding: 10px;
+            }
+
+            .project-image {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .project-description {
+                font-size: 1rem;
+            }
+
+            .project-link {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+            <i class="fas fa-code fa-5x white"></i>
+            <h2>DINESH S</h2>
+            <p>Karur,India.</p>
+            <a href="https://www.instagram.com/_._dinesh_._._/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dinesh-s-58a6b3263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Dinesh001-S"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="project-showcase">
+            <h2>Product and Sales management System</h2>
+            <div class="project-details">
+                <img src="../Screenshot 2024-07-10 113839.png" alt="Project Image" class="project-image">
+                <p class="project-description">
+                    I developed a comprehensive web application using ReactJS, NodeJS, MongoDB, and Express to efficiently manage employee details, billing, inventory, sales, and performance analysis for department stores. This application provides insightful sales analysis, enabling owners to gauge departmental performance effectively.
+                </p>
+                <div class="view">
+                    <a href="https://github.com/Dinesh001-S/product-sales-manager" class="project-link">View on GitHub</a>
+                    <a href="https://storemanaging.netlify.app/" class="project-link">View on Browser</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
