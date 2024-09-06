@@ -56,6 +56,12 @@ a{
     margin-bottom: 50px;
 }
 
+.welcome-message {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px; 
+}
+
 .section-2 h2{
     font-size: 1.7rem;
     margin-bottom: 10px;
