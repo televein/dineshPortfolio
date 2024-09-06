@@ -59,6 +59,7 @@ a{
 .welcome-message {
     text-align: center;
     font-size: 2.5rem;
+    color: white;
     margin-bottom: 20px; 
 }
 
@@ -139,40 +140,40 @@ a{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px; 
-  justify-items: center; /* Center the icons horizontally */
-  align-items: center; /* Center the icons vertically */
+  justify-items: center;
+  align-items: center;
 }
 
 .tech-icon {
-  padding: 10px; /* Padding around each icon */
+  padding: 10px; 
   box-sizing: border-box;
 }
 
 .tech-icon i {
-  font-size: 2em; /* Adjust icon size */
+  font-size: 2em; 
 }
 
 @media (max-width: 1200px) {
   .tech-icons-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 icons per row */
+    grid-template-columns: repeat(4, 1fr); 
   }
 }
 
 @media (max-width: 992px) {
   .tech-icons-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 icons per row */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .tech-icons-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 icons per row */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 576px) {
   .tech-icons-container {
-    grid-template-columns: repeat(1, 1fr); /* 1 icon per row */
+    grid-template-columns: repeat(1, 1fr); 
   }
 }
 
